@@ -1,0 +1,304 @@
+<HTML>
+<title>Mr.B4h4'</title>
+<head>
+
+<center>
+<script> 
+
+
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
+farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00"); 
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[6] = new Array("#33CCFF","#33CCCC","#33CC99","#33CC66","#33CC33","#33CC00"); 
+farbbibliothek[7] = new Array("#00dbdb","#00afdb","#0083db","#0058db","#002cdb","#2c00db","#5800db","#8300db","#af00db","#db00db"); 
+farbbibliothek[8] = new Array("#ffd8f4","#ffcff2","#ffc6f0","#ffbded","#ffb4eb","#ffabe8","#ffa2e6","#ff99e3","#ff90e1","#ff87de","#ff7edc","#ff75d9","#ff6cd7","#ff63d5","#ff5ad3","#ff51d1","#ff48cf","#ff3fcd","#ff36cb","#ff2dc9","#ff24c7","#ff1bc5","#ff12c3","#ff09c1","#f600b8","#ed00b1","#e400aa","#db00a3","#d2009c","#c90095","#c0008e","#b70087","#ae0080","#a50079","#9c0072","#93006b","#8a0064","#81005d","#780056","#6f004f","#660048","#5d0042","#54003b","#4b0035","#42002f","#390028","#300022","#27001b"); 
+farben = farbbibliothek[4];
+function farbschrift() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<font face='monotype corsiva' size=30><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+ 
+setTimeout("farbschrift()",30); 
+} 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= "-=<|| Mr.B4h4' ||>=-";
+</script><span class='newclass'>
+<script type="text/javascript">
+string2array(text); 
+divserzeugen();
+</script></span>
+<script type="text/javascript"><!--
+var message="Sorry, right-click has been disabled";function clickIE(){if(document.all){(message);return false;}}
+function clickNS(e){if(document.layers||(document.getElementById&&!document.all)){if(e.which==2||e.which==3){(message);return false;}}}
+if(document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+</script></center>
+
+
+
+
+<body BGCOLOR="black">
+</head>
+<center><FONT COLOR="red"><FONT SIZE=6></FONT></FONT></center>
+<center><img src="https://1.bp.blogspot.com/-apZ0hyGZ6M0/X3IvQ51BzBI/AAAAAAAAAqE/f4ADyVd232syAopUO6JqOm-NhFIqB2NnwCLcBGAsYHQ/s2048/20190108_222537_waifu2x_art_noise2_scale_tta_1.png" width="300" height="300"><center>
+
+
+
+
+
+<a target="_top" href="" ><img src="https://blog.flamingtext.com/blog/2018/11/20/flamingtext_com_1542726596_889806924.gif" border="0" alt="" title=""></a>
+<br/> <a href="" ></a>
+
+
+
+
+
+
+
+
+
+
+
+<h2><script language="JavaScript1.2">
+
+
+
+var message="-====== <|| YOUR WEBSITE HAS BEEN HACKED ...... YOUR SECURITY IS LOW ||> ======-"
+var neonbasecolor="white"
+var neontextcolor="red"
+var neontextcolor2="#FFFFA8"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script></h2>
+
+
+
+
+
+
+<table border=1 width="100%" bordercolor="yellow">
+<td><td align="center" valign="middle"><td width="8%"><font color="green"><center>
+<font color="red">THANKS TO :</center>
+</font></font></td></td></td>
+<td><td align="center" valign="middle"><td width="92%"><font color="white"><marquee> || Mr.Chemod777 || 25juL || Mr.R00TN3T || Mr.D4gH || Mr.B4h4' || SnG KaKaLa || Ghost666 || Inyour ./Tu4#N1Cn4m3 || #007 || ~TUAN B4DUT || CYBER N3T || Mr./Skull || cRo0T d1 d4L3m || N00B T3RS4K1T1 || InYourâ¢Mr.Jackers ||  || C@tCRUTz || Mr.B41B4L.X ||and ALL My Friends ||</marquee></font></td></td></td>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var imgUrlLightning = "https://andrewhungblog.files.wordpress.com/2018/08/matrixrain.gif?w=840";
+document.write("<style>img.bg{z-index:-1;min-height: 100%;min-width: 1024px;width: 100%;height: auto;position: fixed;top: 0;left: 0;}@media screen and (max-width: 1024px){img.bg{left: 50%;margin-left: -512px;}}<\/style><img src=\""+imgUrlLightning+"\" class=\"bg\"\/>");
+</script>
+
+
+<script language="JavaScript">
+<!--
+function UserExit(){
+alert("We Will Continue To Fight!");
+}
+-->
+</script>
+<body onUnload="UserExit()">
+<script type="text/javascript" src="http://htmlfreecodes.com/codes/rain.js"></script>
+
+<td align="center">
+
+
+<font face="Courier New" size="2" color="lime"> 
+<font color="lime">
+
+<embed src="http://www.youtube.com/v/28iwT__4S2I&autoplay=1" type="application/x-shockwave-flash" wmode="transparent" width="1" height="1"></embed>
+<script language="JavaScript">
+yourLogo='BGHH';
+logoSize=5;
+logoColor='FFFFFF';
+logoWidth=100;
+
+logoHeight=100;
+
+logoSpeed=0.01;
+yourLogo=yourLogo.split('');
+L=yourLogo.length; 
+Result="<font size="+logoSize+" color="+logoColor+">";
+TrigSplit=360/L;
+br=(document.layers)?1:0;
+if (br){
+for (i=0; i < L; i++)
+document.write('<layer name="ns'+i+'" top=0 left=0 width=14 height=14">'+Result+yourLogo[i]+'</font></layer>');
+}
+else{
+document.write('<div id="outer" style="position:absolute;top:0px;left:0px">
+<div style="position:relative">
+');
+for (i=0; i < L; i++)
+document.write('<div id="ie" style="position:absolute;top:0px;left:0px;width:14px;height:14px">'+Result+yourLogo[i]+'</font></div>
+');
+document.write('</div>
+</div>
+');
+}
+ypos=0;
+xpos=0;
+step=logoSpeed;
+currStep=0;
+Y=new Array();
+X=new Array();
+Yn=new Array();
+Xn=new Array();
+for (i=0; i < L; i++) 
+ {
+ Yn[i]=0;
+ Xn[i]=0;
+ }
+(document.layers)?window.captureEvents(Event.MOUSEMOVE):0;
+function Mouse(evnt){
+ ypos = (document.layers)?evnt.pageY:event.y;
+ xpos = (document.layers)?evnt.pageX:event.x;
+}
+(document.layers)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+function animateLogo(){
+if (!br)outer.style.pixelTop=document.body.scrollTop; 
+for (i=0; i < L; i++){
+var layer=(document.layers)?document.layers['ns'+i]:ie[i].style;
+layer.top =Y[i]+logoHeight*Math.sin(currStep+i*TrigSplit*Math.PI/180);
+layer.left=X[i]+logoWidth*Math.cos(currStep+i*TrigSplit*Math.PI/180);
+}
+currStep-=step;
+}
+function Delay(){
+for (i=L; i >= 0; i--)
+{
+Y[i]=Yn[i]+=(ypos-Yn[i])*(0.1+i/L);           
+X[i]=Xn[i]+=(xpos-Xn[i])*(0.1+i/L);        
+}
+animateLogo();
+setTimeout('Delay()',20);
+}
+window.onload=Delay;
+-->
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>

